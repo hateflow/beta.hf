@@ -84,7 +84,7 @@
                 $("#pr"+ii).attr('value', "");
                 $(("#pr"+ii)).attr("class", "progress is-small");
               }
-             myObj = JSON.parse(httpGet("http://api.hateflow.de/api?text=" + document.getElementById('input').value + "&probabilities=1"));
+             myObj = JSON.parse(httpGet("https://api.hateflow.de/api?text=" + document.getElementById('input').value + "&probabilities=1"));
              document.getElementById('1_insult').innerHTML = (myObj.results["insult"]*100).toFixed(0);
              document.getElementById('1_identity_hate').innerHTML = (myObj.results["identity_hate"]*100).toFixed(0);
              document.getElementById('1_obscene').innerHTML = (myObj.results["obscene"]*100).toFixed(0);
